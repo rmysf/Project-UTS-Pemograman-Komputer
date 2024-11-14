@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tips.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="asset/logo petani cerdas3.png" alt="Logo">
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="kalender.html">Kalender Tanam</a></li>
+                <li><a href="tips.html">Tips</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="tips">
+        <h2>Tips Pertanian</h2>
+        <ul>
+            <li>Perhatikan jenis tanah sebelum menanam</li>
+            <li>Gunakan pupuk organik untuk hasil maksimal</li>
+            <li>Atur waktu penyiraman secara teratur</li>
+        </ul>
+    </section>
+    <script>
+        // Mendapatkan URL halaman saat ini
+        let currentPage = window.location.pathname.split("/").pop();
+
+        // Menentukan elemen navbar
+        let navLinks = document.querySelectorAll('nav ul li a');
+
+        // Menambahkan kelas 'active' pada link yang sesuai dengan halaman yang sedang dibuka
+        navLinks.forEach(link => {
+            if (link.getAttribute("href") === currentPage) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+
+</body>
+</html>

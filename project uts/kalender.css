@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    background-size: cover;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.413);
+    height: 70px;
+    width: 100%;
+    top: 0; /* Memastikan header berada di atas */
+    left: 0; /* Pastikan posisi header di kiri */
+    z-index: 10; /* Pastikan header di atas konten lain */
+}
+
+
+.logo img {
+    max-height: 100px;
+    width: auto;
+}
+
+
+nav {
+    flex-grow: 1; 
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-left: 700px;
+}
+
+nav ul li {
+    margin: 0 15px;
+    
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #4CAF50;
+}
+
+nav ul li a.active {
+    color: #4CAF50; /* Mengubah warna tautan aktif menjadi hijau */
+}
+
+/* CSS untuk kalender */
+#kalender {
+    background-color: #f0f8ff;  /* Warna latar belakang */
+    padding: 70px;
+    border-radius: 8px;
+    margin: 70px auto;
+    max-width: 700px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 200px;
+    
+}
+
+/* Judul Kalender Tanam */
+#kalender h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #4CAF50;
+    position: relative;
+    top: -30px;
+}
+
+/* Label untuk dropdown */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Dropdown Pilihan Tanaman */
+#plant {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Teks waktu tanam */
+#planting-time {
+    font-size: 1.1em;
+    color: #2e8b57;
+    font-weight: bold;
+    position: relative;
+    top: 20px;
+}

@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    background-size: cover;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.413);
+    height: 70px;
+    width: 100%;
+    top: 0; 
+    left: 0; 
+    z-index: 10; 
+}
+
+
+.logo img {
+    max-height: 100px;
+    width: auto;
+}
+
+
+nav {
+    flex-grow: 1; 
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-left: 700px;
+}
+
+nav ul li {
+    margin: 0 15px;
+    
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #4CAF50;
+}
+
+nav ul li a.active {
+    color: #4CAF50; /* Mengubah warna tautan aktif menjadi hijau */
+}
+
+.tips {
+    background-color: #f0f8ff; 
+    padding: 20px;
+    border-radius: 8px; 
+    max-width: 600px; 
+    margin: 20px auto; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 200px;
+}
+
+.tips h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    color: #4CAF50; 
+    margin-bottom: 15px; 
+    text-align: center; 
+}
+
+.tips ul {
+    list-style-type: none; 
+    padding: 0;
+}
+
+.tips li {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #333; 
+    margin-bottom: 10px; 
+    line-height: 1.6; 
+}
+
+.tips li::before {
+    content: "✔";
+    color: #4CAF50;
+    margin-right: 10px; 
+}

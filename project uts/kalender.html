@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="kalender.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="asset/logo petani cerdas3.png" alt="Logo">
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="kalender.html">Kalender Tanam</a></li>
+                <li><a href="tips.html">Tips</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="kalender">
+        <h2>Kalender Tanam</h2>
+        <label for="plant">Pilih Jenis Tanaman:</label>
+        <select id="plant" onchange="showPlantingTime()">
+            <option value="">-- Pilih Tanaman --</option>
+            <option value="padi">Padi</option>
+            <option value="jagung">Jagung</option>
+            <option value="kedelai">Kedelai</option>
+            <option value="tomat">Tomat</option>
+            <option value="kentang">Kentang</option>
+            <option value="cabai">Cabai</option>
+            <option value="wortel">Wortel</option>
+            <option value="melon">Melon</option>
+            <option value="semangka">Semangka</option>
+            <option value="apel">Apel</option>
+            <option value="stroberi">Stroberi</option>
+            <option value="mawar">Mawar</option>
+            <option value="anggrek">Anggrek</option>
+        </select>
+        <p id="planting-time">Silakan pilih jenis tanaman untuk melihat waktu tanam.</p>
+    </section>
+
+    <script>
+        // Mendapatkan URL halaman saat ini
+        let currentPage = window.location.pathname.split("/").pop();
+
+        // Menentukan elemen navbar
+        let navLinks = document.querySelectorAll('nav ul li a');
+
+        // Menambahkan kelas 'active' pada link yang sesuai dengan halaman yang sedang dibuka
+        navLinks.forEach(link => {
+            if (link.getAttribute("href") === currentPage) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

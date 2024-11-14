@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Petani Cerdas</title>
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="asset/logo petani cerdas3.png" alt="Logo">
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="kalender.html">Kalender Tanam</a></li>
+                <li><a href="tips">Tips</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div id="home" class="home-content">
+        <h2 class="typing">Selamat Datang di Portal Pertanian</h2>
+        <p>Website ini adalah sebuah portal informasi pertanian yang dirancang untuk membantu para petani
+            maupun pecinta tanaman dalam memahami berbagai jenis tanaman yang bisa mereka tanam. Melalui panduan 
+            dasar yang disediakan, pengguna dapat mengetahui karakteristik tiap tanaman, mulai dari sayuran, buah-buahan,
+            hingga tanaman hias, lengkap dengan informasi mengenai iklim dan kondisi tanah yang sesuai.
+        </p>
+    </div>
+
+    <section id="#home" class="about-section">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Tentang Kami</h2>
+                <p>Saya selalu tertarik melihat berbagai tanaman dan lingkungan alam. Ketertarikan saya terhadap alam membuat saya ingin mendalami dunia pertanian dan bercocok tanam.</p>
+                <p>Saat ini, Petani Cerdas hadir sebagai platform yang membantu petani dan pecinta tanaman dalam memahami berbagai jenis tanaman, mulai dari sayuran, buah-buahan, hingga tanaman hias, lengkap dengan informasi iklim dan kondisi tanah yang sesuai.</p>
+                <p>Misi kami adalah memberikan informasi yang akurat dan mudah diakses, sehingga siapa saja bisa berkebun atau bertani dengan bijak. Kami percaya bahwa dengan panduan yang tepat, semua orang bisa berkontribusi dalam menjaga keberlanjutan alam.</p>
+            </div>
+            <div class="about-image">
+                <img src="asset/download (1).jpg" alt="Profile Image">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="left">
+            <p>Hubungi Kami:</p>
+            <ul>
+                <li>Email: <a href="mailto:info@petanicerdas.com">info@petanicerdas.com</a></li>
+                <li>Telepon: <a href="https://wa.me/621234567890" target="_blank">+62 123-456-7890</a></li>
+                <li>Alamat: Jl. Pertanian No. 123, Jakarta</li>
+            </ul>
+        </div>
+        
+        <div class="right">
+            <div class="social">
+                <ul>
+                    <li>
+                        <a href="https://instagram.com/petanicerdas" target="_blank">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                            Instagram: @petanicerdas
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <p class="copyright">&copy; 2023 Petani Cerdas. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Mendapatkan URL halaman saat ini
+        let currentPage = window.location.pathname.split("/").pop();
+
+        // Menentukan elemen navbar
+        let navLinks = document.querySelectorAll('nav ul li a');
+
+        // Menambahkan kelas 'active' pada link yang sesuai dengan halaman yang sedang dibuka
+        navLinks.forEach(link => {
+            if (link.getAttribute("href") === currentPage) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>
